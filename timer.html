@@ -31,7 +31,7 @@
 
   /* Timer */
   #timer {
-    font-size: clamp(5rem, 18vw, 9rem);
+    font-size: clamp(8rem, 32vw, 18rem);
     font-weight: 400;
     letter-spacing: 0.06em;
     color: #ffffff;
@@ -53,65 +53,12 @@
   #status.negative { color: #ff6b6b; }
 
   /* Buttons */
-  .controls {
-    display: flex;
-    gap: 0.9rem;
-    margin-top: 3rem;
-  }
-  button {
-    background: transparent;
-    border: 0.5px solid rgba(255,255,255,0.25);
-    color: #ffffff;
-    border-radius: 8px;
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background 0.15s, border-color 0.15s;
-    outline: none;
-  }
-  button:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.45); }
-  button:active { background: rgba(255,255,255,0.14); }
-
-  #btn-toggle {
-    background: #1e56a8;
-    border-color: #1e56a8;
-    min-width: 130px;
-  }
-  #btn-toggle:hover { background: #2563bb; border-color: #2563bb; }
-
-  #btn-add {
-    border-color: rgba(255,225,77,0.45);
-    color: #ffe14d;
-  }
-  #btn-add:hover { background: rgba(255,225,77,0.1); border-color: rgba(255,225,77,0.7); }
-
-  #btn-reset {
-    color: rgba(255,255,255,0.5);
-    border-color: rgba(255,255,255,0.15);
-    font-size: 0.85rem;
-    padding: 0.6rem 1rem;
-  }
-  #btn-reset:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
+  .controls { display: none; }
 
   /* Keyboard hint */
-  .hint {
-    margin-top: 2.5rem;
-    font-size: 0.72rem;
-    color: rgba(255,255,255,0.28);
-    letter-spacing: 0.06em;
-    text-align: center;
-    line-height: 1.8;
-  }
-  kbd {
-    display: inline-block;
-    background: rgba(255,255,255,0.1);
-    border: 0.5px solid rgba(255,255,255,0.2);
-    border-radius: 4px;
-    padding: 1px 5px;
-    font-family: inherit;
-    font-size: 0.7rem;
-  }
+  .hint { display: none; }
+
+
 </style>
 </head>
 <body>
